@@ -116,7 +116,7 @@ td button {
 .container-do-search {
     margin-top: 20px;
     height: 100px;
-}
+   }
 
 
 #back-button {
@@ -167,4 +167,11 @@ button:active {
 button:hover {
     background-color: #f7cf19;
 
+}
+
+#busca {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid;
 }

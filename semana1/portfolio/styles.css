@@ -1,0 +1,129 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#nome {margin-top: 150px;
+}
+
+#inicio {
+    background-color: lemonchiffon;
+}
+
+#inicio1 {
+    background-color: lemonchiffon;
+}
+
+#inicio2 {
+    background-color: lemonchiffon;
+}
+
+#inicio4 {
+    background-color: lemonchiffon;
+}
+
+#inicio5 {
+    background-color: lemonchiffon;
+}
+
+#texto {font-family: arial;
+font-size: 30px;
+font-style: inherit;
+color: black;
+margin-left: 190px;
+margin-top: 200px;
+}
+
+
+#bloco-central {
+    margin-left: 20cm;
+}
+
+#format-nome {
+    font-family: arial;
+}
+
+#saudacao{
+    margin-top: 150px;
+    margin-left: 720px;
+    font-family: arial;
+    padding-bottom: 40px;
+}
+
+#corpo1 {margin-left: 1100px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}#corpo2 {
+    text-align: center;
+    margin-top: 500px;
+    font-family: Arial;
+    font-size: 30px;
+    color:black;
+   }
+
+#form-nome {
+    height: 30px;
+    width: 300px;
+}
+
+#form-email {
+    height: 30px;
+    width: 300px;
+}
+
+#form-mensagem {
+    height: 120px;
+    width: 300px;
+}
+
+#menu1 {padding-right: 30px;
+
+}
+#menu2 {padding-right: 30px;}
+
+#menu3 {padding-right: 30px;}
+#menu5 {scroll-padding-left: 20px; }
+
+h3 {margin top: 800px
+padding-top: 800px;
+}
+
+td {
+    font-family: arial;
+
+}
+
+#tab-geral {
+margin-top: 300px;
+    margin-left: 250px;
+}
+
+#tab1 {font-size: 40px;
+    padding-right: 10px;
+
+}
+#tab2 {
+    font-size: 20px ;
+}
+
+#tab3 {
+    font-size: 20px;
+}
+
+#tab4 {font-size: 20px;}
+
+#tab5 {
+    font-size: 20px;
+}
+
+#tab6 {
+    font-size: 20px;
+}
+
+#linha1 {
+    padding-right: 90px;
+}

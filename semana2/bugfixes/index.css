@@ -176,3 +176,8 @@ button:hover {
     border-left: none;
     border-bottom: 2px solid;
 }
+
+#tabela-principal {
+width: 200px;
+    margin: 0 auto;
+   }

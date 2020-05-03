@@ -1,0 +1,24 @@
+1>
+a. False
+b. False
+c. True
+d. False
+e. boolean
+
+2>
+I - undefined
+II - null
+III - 11
+IV - 3 e 4
+V - 19 e 9
+VI - 3
+VII - 1
+
+a) é uma maneira de guardar e acessar mais de uma informação em um mesmo local ao mesmo tempo.
+Devemos declarar let array = [1,2,3]
+
+b) index inicial é 0
+
+c) usando o comando array.lenght
+
+d) console.log (“Aqui ficam as palavras”)

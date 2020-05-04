@@ -1,0 +1,6 @@
+const pergunta1 = prompt ("Qual é o seu nome?")
+const pergunta2 = prompt ("Qual é a sua idade?")
+const pergunta3 = prompt ("Informe a cidade onde mora")
+const pergunta4 = prompt ("Qual a sua cor favorita?")
+const pergunta5 = prompt ("Qual é o seu livro predileto?")
+console.log ("Meu nome é", pergunta1, "minha idade é",  pergunta2, "moro em", pergunta3, "minha cor favorita é", pergunta4, "e meu livro favorito é ", pergunta5)

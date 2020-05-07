@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Controlador de Despesas</title>
+    
+</head>
+<body>
+<div id="container">
+    <div id="sub-container">
+        <div id="controleDespesa">
+        <p>Cadastrar despesa </p>
+        <p>
+        <form method="POST">
+
+            <label for="primeiroBloco">Valor </label>
+               <input type="text" id="primeiroBloco"> 
+            </p>
+            <p>Tipo (casa, viagem, alimentação) 
+                    <select>
+                    <option>Casa</option>
+                    <option>Viagem</option>
+                    <option>Alimentação</option>
+            </select>
+            <p>
+                Descrição <input id="inputDescricao"> 
+            </p>
+           
+
+            <p>
+                <button class="btn" type="reset"> Cadastrar Despesa </button>
+            </p>
+            
+        </form>
+        </div>
+        
+        <div id="despesasDetalhadas">
+            <p>Despesas Detalhadas</p>
+
+            <form method="POST">
+
+            <label for="segundoBloco">Valor </label>
+               <input type="text" id="segundoBloco"> 
+            </p>
+            <p>Tipo (casa, viagem, alimentação) 
+                    <select>
+                    <option>Casa</option>
+                    <option>Viagem</option>
+                    <option>Alimentação</option>
+                    </select>
+                    <p>
+                        <label for="terceiroBloco">Valor Máximo </label>
+                        <input type="text" id="terceiroBloco"> 
+                    </p>
+
+                    <p>
+                        <label for="quartoBloco">Valor Mínimo </label>
+                        <input type="text" id="quartoBloco"> 
+                    </p>
+
+                    <p>
+                    <button>Filtrar</button> <button>Limpar Filtros</button>
+                    </p>
+           </form>
+
+        </div>
+        <div id="extrato">Extrato</div>
+    </div>
+
+
+
+</div>
+
+
+    
+</body>
+</html>

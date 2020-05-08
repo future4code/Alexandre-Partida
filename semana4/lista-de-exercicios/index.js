@@ -43,8 +43,17 @@ No console será mostrado:
 -10
 
 
-Dessa forma
+EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO
+
+1.
+Através dos códigos "for", "for of" ou "push". 
 
 */
+
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+
+numeros.push(9)
+
+console.log(numeros)
 
 

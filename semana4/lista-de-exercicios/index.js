@@ -33,4 +33,18 @@ No console será mostrado:
 6
 8
 
+4.
+Este código faz uma comparação com todos os números do array. Todos os números do array entram nas duas condições exceto o número
+-10. -10 é menor do que a variável numero1 mas não é maior do que a variavel numero2. Dessa forma, ele será mostrado apenas na 
+variavel numero1.
+
+No console será mostrado:
+25, 12, 55, 64, 121, 44, 11, 84, 51, 48, 14, 73, 111, 283, 1, 99, 13, 31, 83, 131, 1, 1,1, 25, 1590
+-10
+
+
+Dessa forma
+
 */
+
+

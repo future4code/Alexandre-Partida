@@ -24,5 +24,13 @@ A tela apresentará:
 para a variável novoMontante: 165
 para a variável segundoMontante: Tipo de investimento incorreto já que a opção Tesouro Direto não foi listada na função.
 
+3.
+O código verifica se um número é par ou ímpar e joga dentro de arrays diferentes. Se o número for par, vai para a array 1
+e se o número for ímpar, vai para a array 2
+
+No console será mostrado:
+"Quantidade total de números 14"
+6
+8
 
 */

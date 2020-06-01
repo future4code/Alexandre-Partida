@@ -6,19 +6,31 @@
 	},
 	"item": [
 		{
-			"name": "criaPlayRock",
+			"name": "Cria Playlist",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Alexandre-Gessone-Mello",
+						"value": "Alexandre-Gessone",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\" : \"Funk\"\n}",
+					"raw": "{\n\t\"name\": \"MPB\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,30 +54,18 @@
 			"response": []
 		},
 		{
-			"name": "verPlaylist",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
+			"name": "Ver Playlists",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Alexandre-Gessone-Mello",
+						"value": "Alexandre-Gessone",
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"result\": {\n        \"quantity\": \"numeber\",\n        \"list\": [\n            {\n                \"id\": \"string \",\n                \"name\": \"string\"\n            }\n        ]\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists?quantity=3",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -75,25 +75,56 @@
 					"path": [
 						"labefy",
 						"playlists"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "3"
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "adicionaMusica",
+			"name": "Adiciona Musica",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Alexandre-Gessone-Mello",
+						"value": "Alexandre-Gessone",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandrte-Gessone",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Confortable Numb\",\n\t\"artist\": \"Pink Floyd\",\n\t\"url\": \"string\"\n}",
+					"raw": "{\n\t\"name\": \"Linda\",\n\t\"artist\": \"Caetano Veloso\",\n\t\"url\": \"www\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,7 +148,54 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "1"
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pegar Playlist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Alexandre-Gessone",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "588c23b6-8244-488e-a4da-25bf3f3abef5"
 						}
 					]
 				}

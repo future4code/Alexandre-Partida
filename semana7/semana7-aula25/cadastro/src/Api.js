@@ -12,7 +12,7 @@ const criaUsuario = (nomeUsuario, emailUsuario) => {
       body,
       {
         headers: {
-          Authorization: "AlexandreGessone"
+          Authorization: "Alexandre-Gessone-Mello"
         }
       }
     )
@@ -30,7 +30,7 @@ const gerenciaUsuario =  () => {
 
     axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",{
         headers: {
-            Authorization: "AlexandreGessone"
+            Authorization: "Alexandre-Gessone-Mello"
         }
     }
     )
@@ -42,5 +42,5 @@ const gerenciaUsuario =  () => {
       });
   };
 
-  gerenciaUsuario();
+ 
     

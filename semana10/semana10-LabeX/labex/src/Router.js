@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter, useHistory } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import CreateTrip from './Components/CreateTrip';
 import CreateTripPageADM from './Components/CreateTripPageADM';
 import HomePage from './Components/HomePage';
@@ -24,7 +24,7 @@ function Router() {
           <HomePage/>
         </Route>
         <Route exact path="/createTrip">
-          <CreateTrip/>
+          <CreateTripPageADM/>
         </Route>
         <Route exact path="createTripAdm/">
           <CreateTripPageADM/>

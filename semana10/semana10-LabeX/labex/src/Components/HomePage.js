@@ -3,17 +3,20 @@ import { useHistory } from 'react-router-dom';
 
 
 
+
+
 function Homepage() {
+  const history = useHistory();
 
-  let history = useHistory();
-
-  const goToAboutLogin = () => {
+  const goToLogin = () => {
     history.push("/login");
   }
 
+  
+
   return (
     <div>
-      <button onClick={goToAboutLogin}>Pagina de login</button>
+      <button onClick={goToLogin}>Vá para Login</button>
     </div>
   );
 }

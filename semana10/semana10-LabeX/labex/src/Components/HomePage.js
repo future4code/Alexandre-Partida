@@ -12,11 +12,14 @@ function Homepage() {
     history.push("/login");
   }
 
-  
+  const goToTrip = () => {
+    history.push("/listTripUser")
+  }
 
   return (
     <div>
       <button onClick={goToLogin}>Vá para Login</button>
+      <button onClick={goToTrip}>Solicitar Viagem</button>
     </div>
   );
 }

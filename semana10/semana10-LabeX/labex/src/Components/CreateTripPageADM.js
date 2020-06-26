@@ -1,14 +1,56 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
-function CreateTripPageADM() {
+function CreateTripPageADM(props) {
+    const[createTrip, setCreateTrip] = useState ({name: "", planet: "", date: "", description: "", durationDays: 0})
+
   return (
-    <div>
+    <form>
      
-      CreateTripPageADM
+     <p>
+      <input
+          name="name"
+          placeholder="Nome"
+          value=""
+          type="text"
+          required
+      />
+     </p>
+
+     <p>
+       <input
+          name="planet"
+          placeholder="Planeta"
+          value=""
+          type="text"
+          required
+       />
+     </p>
+
+     <p>
+      <input
+      name="drescription"
+      placeholder="Descrição"
+      value=""
+      type="text"
+      required
+      />
+     </p>
+
+     <p>
+      <input
+      name="durationDays"
+      placeholder="Duração"
+      value=""
+      type="text"
+      required
+      />
+     </p>
       
 
-    </div>
+
+    <button type="submit">Enviar</button>
+    </form>
   );
 }
 

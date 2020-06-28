@@ -6,30 +6,45 @@ function ListTripUsuarios(props) {
 
   const [form, setForm] = useState({name: "", age: "", applicationText: "", profession: "", country: "", trip: ""});
 
-  const postUser = () =>{
-    axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/trips/NoIFVcOiSgTKTIPVZwX/apply").then(response =>{
-      setForm(response.data);
-
-    }).catch(err=> {
-      console.log(err);
-    });
-
-  }
-
-  useEffect(()=>{
-    postUser();
-  }, []);
-
   const handleInputChange = event => {
     const {name, value} = event.target;
 
     setForm({...form, [name]: value});
   };
   
+  const botaoEnviar = (event) => {
+    const axiosConfig = {
+      header: {
+        aluno: "darvas",
+        id: "NoIFVcOiSgTKTIPVZwXS"
+      }
+    }
+    
+    const body ={
+      name: form.name,
+      age: form.age,
+      applicationText: form.applicationText,
+      profession: form.profession,
+      country: form.country,
+      trip: form.trip
+    }
+    
+    axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trips/NoIFVcOiSgTKTIPVZwX/apply", body, axiosConfig).then(response =>{
+      alert("Viagem criada com sucesso");
+      setForm({name: "", age: "", applicationText: "", profession: "", country: "", trip: ""})
+
+    }).catch(err=> {
+      
+      
+    });
+
+    event.preventDefault()
+    
+  }
   
 
   return (
-    <form onSubmit>
+    <form onSubmit={botaoEnviar}>
       <p>
         <input
           name="name"

@@ -1,4 +1,8 @@
 import * as moment from "moment"
+moment.locale("pt-br")
+
+
+// EXERCÍCIO 1
 
 type event = {
     name: string,
@@ -10,14 +14,14 @@ type event = {
 const allEvents: event[] = [
 
     {
-        name: "Reunião",
+        name: "Reunião com diretoria geral e vendedores",
         description: "Reunião importante",
         startAt: moment("25/06/2020 15:00", "DD/MM/YYYY HH:mm" ),
         finishAt: moment("25/06/2020 16:00", "DD/MM/YYYY HH:mm")
     },
 
     {   
-        name: "Prova na faculdade",
+        name: "Prova na faculdade e encontro com amigos",
 		description: "Prova importante",
 		startAt: moment("26/06/2020 17:00", "DD/MM/YYYY HH:mm"),
 	 	finishAt: moment("26/06/2020 18:00", "DD/MM/YYYY HH:mm")
@@ -25,14 +29,23 @@ const allEvents: event[] = [
     }
 ]
 
-    
-function showEvents (event: event[]): event[] {
-     
-    return event
-  
+// EXERCÍCIO 2
+// a)
 
-  };
+const showEvents = (events: event[]): void => {
 
-const resultado: event[] = showEvents(allEvents)
+    events.forEach((item: event)=>{
+        const name = item.name
+        const description = item.description
+        const start = item.startAt.format("dddd[,] DD [de] MMMM [de] YYYY[,] HH:mm")
+        const finish = item.finishAt.format("dddd[,] DD [de] MMMM [de] YYYY[,] HH:mm")
+        console.log("Nome: ", name);
+        console.log("Horário de início: ", start);
+        console.log("Horário de fim: ", finish);
+        console.log("Descrição: ", description)
 
-console.log(resultado)
+    })
+
+};
+
+showEvents(allEvents);
